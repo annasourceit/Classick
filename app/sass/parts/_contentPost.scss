@@ -1,0 +1,203 @@
+.contentPost {
+  width: 100%;
+  &__article{
+    margin-bottom: 30px;
+  }
+  &__adverbanner {
+    padding: 30px 0;
+    border-top:  2px solid #e6e6e6;
+    @include breakpoint(sm) {
+      padding: 30px;
+    }
+    @include breakpoint(md) {
+      padding: 50px;
+    }
+  }
+  @include breakpoint(tb) {
+    width: 70%;
+    max-width: 838px;
+  }
+}
+
+/*-----------Article-------------*/
+
+.article__title {
+  color: #010101;
+  font-size: 20px;
+  font-weight: 500;
+  margin: 50px 0 70px 0;
+  @include breakpoint(sm) {
+    font-size: 30px;
+  }
+  @include breakpoint(md) {
+    font-size: 38px;
+  }
+}
+.article__text {
+  color: #000000;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 35.56px;
+}
+.article__firstLetter {
+  width: 100px;
+  height: 100px;
+  float: left;
+  color: #40c4ff;
+  font-size: 64px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+.article__oneimg  {
+  margin: 57px 0 70px 0;
+  & img {
+    width: 100%;
+  }
+}
+.article__quote {
+  padding: 30px 20px;
+  text-align: justify;
+  color: #757575;
+  font-size: 20px;
+  font-weight: 500;
+  font-style: italic;
+  line-height: 35px;
+  .quotes {
+    vertical-align: top;
+    width: 7%;
+  }
+  @include breakpoint(sm) {
+    padding: 50px 30px;
+    font-size: 30px;
+    line-height: 45px;
+  }
+  @include breakpoint(md) {
+    font-size: 38px;
+    line-height: 55.88px;
+    padding: 70px 50px;
+  }
+}
+.article__twoimg {
+  @extend .column;
+  margin-bottom: 20px;
+  @include breakpoint(sm) {
+    margin-bottom: 50px;
+  }
+  @include breakpoint(md) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 70px;
+  }
+  & img {
+    width: 100%;
+    object-fit: contain;
+    margin-bottom: 20px;
+
+    @include breakpoint(md) {
+      width: 49%;
+    }
+  }
+}
+.bluetext {
+  color: #40c4ff;
+}
+
+/*------Advertising banner-------*/
+
+.contentPost__adverbanner {
+  .adverbanner__wrap {
+    @include bg-img('../img/banner2.png');
+    line-height: 90px;
+  }
+  .adverbanner__title {
+    text-align: center;
+    color: #ffffff;
+    font-size: 20px;
+    min-width: 300px;
+    font-weight: 500;
+    @include breakpoint(sm) {
+      font-size: 25px;
+    }
+    @include breakpoint(md) {
+      font-size: 33px;
+    }
+  }
+}
+
+/*----------Comments-----------*/
+
+.comment__title {
+  color: #000000;
+  font-size: 18px;
+  font-weight: 500;
+  padding-bottom: 30px;
+  border-bottom:  1px solid #eceff1;
+}
+
+.comment__sublist {
+  margin-left: 60px;
+}
+
+.comment__info {
+  margin-top: 30px;
+  @extend .row;
+  justify-content: flex-start;
+}
+.comment__wrap {
+  margin-left: 10px;
+}
+.participant-name {
+  color: #000000;
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 7px;
+}
+.comment-date {
+  color: #a3a3a3;
+  font-size: 13px;
+  font-weight: 500;
+}
+.comment-text {
+  margin-left: 60px;
+  margin-top: 15px;
+  color: #616161;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 25.4px;
+}
+
+.comment__likes {
+  margin: 22px 0 0 60px;
+  padding-bottom: 30px;
+  border-bottom:  1px solid  #eceff1;
+}
+
+.material-icons {
+  color: #bdbdbd;
+  font-size: 20px;
+  font-family: $font-family4;
+  font-weight: 400;
+  line-height: 25.4px;
+  margin-right: 10px;
+}
+.counter {
+  margin-right: 50px;
+  color: #bdbdbd;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 25.4px;
+}
+.material-icons--red {
+  transition: all 0.3s ease;
+  &:hover {
+    color: red;
+  }
+}
+.material-icons--blue {
+  transition: all 0.3s ease;
+  &:hover {
+    color: blue;
+  }
+}
+

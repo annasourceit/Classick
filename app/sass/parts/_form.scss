@@ -1,0 +1,99 @@
+.commentForm {
+  margin-top: 50px;
+  &__wrap {
+    @extend .row
+  }
+}
+
+.form__wrap {
+  @extend .column;
+  @include breakpoint(tb) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 30px;
+  }
+}
+.form__textInput {
+  outline: none;
+  width: 100%;
+  margin-bottom: 20px;
+  height: 50px;
+  border-radius: 5px;
+  border: 1px solid #cfd8dc;
+  padding-left: 20px;
+  line-height: 50px;
+  color: #6f6f6f;
+  font-size: 15px;
+  font-weight: 500;
+  &::placeholder {
+    color: #6f6f6f;
+    font-size: 15px;
+    font-weight: 500;
+  }
+  @include breakpoint(tb) {
+    width: 49%;
+    margin-bottom: 0;
+  }
+}
+.form__textareaInput{
+  outline: none;
+  width: 100%;
+  margin-bottom: 20px;
+  height: 50px;
+  line-height: 48px;
+  border-radius: 5px;
+  padding-left: 20px;
+  border: 1px solid #cfd8dc;
+  resize: none;
+  color: #6f6f6f;
+  font-size: 15px;
+  font-weight: 500;
+  &::placeholder {
+    color: #6f6f6f;
+    font-size: 15px;
+    font-weight: 500;
+  }
+  @include breakpoint(tb) {
+    width: 79%;
+    margin-bottom: 0;
+  }
+}
+.form__submitInput {
+  outline: none;
+  border: none;
+  width: 70%;
+  line-height: 50px;
+  border-radius: 5px;
+  background-color: #40c4ff;
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 500;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+  &:hover {
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0,0,0,.2);
+  }
+  @include breakpoint(tb) {
+    width: 19%;
+  }
+}
+
+.asideForm {
+  margin-top: 30px;
+}
+.form__textInput--width {
+  width: 100%;
+  @include breakpoint(tb) {
+    width: 58%;
+  }
+}
+.form__submitInput--width {
+  width: 70%;
+  margin-bottom: 30px;
+  @include breakpoint(tb) {
+    width: 38%;
+    margin-bottom: 0;
+  }
+}
